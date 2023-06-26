@@ -15,8 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cf1c3caa39.js" crossorigin="anonymous"></script>
+    <style>
+    body{ background:#666; }
+    button{ border:none; cursor:pointer; outline:none; }
+    button#playpausebtn{
+	background:url(images/speaker.png) no-repeat;
+	width:12px;
+	height:14px;
+    } 
+    </style>	  
     <script>
-			var audio, playbtn, seek_bar;
+			var audio, playbtn;
 			function initAudioPlayer(){
 				audio = new Audio();
 				audio.src = "assets/KAS.mp3";
