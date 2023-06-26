@@ -18,7 +18,7 @@
     <style>
     button{ border:none; cursor:pointer; outline:none; }
     button#playpausebtn{
-	background:"fas fa-play-circle";
+	<a id="icon_speaker" class="tag had" href="assets/KAS.mp3" target="_blank"><i class="fas fa-play-circle"></i></a>;
 	width:25px;
 	height:25px;
     } 
@@ -38,10 +38,10 @@
 				function playPause(){
 					if(audio.paused){
 				    	audio.play();
-		    			playbtn.style.background = "fas fa-play-circle";
+		    			playbtn.style();
 	    			} else {
 		    			audio.pause();
-		    			playbtn.style.background = "fas fa-play-circle";
+		    			playbtn.style();
 	    			}
 				}
 				}
