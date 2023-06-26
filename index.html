@@ -15,36 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cf1c3caa39.js" crossorigin="anonymous"></script>
-    <style>
-    button{<i class="fas fa-play-circle"></i>}
-    button#playpausebtn{
-	<i class="fas fa-play-circle"></i>;
-    } 
-    </style>	  
-    <script>
-			var audio, playbtn;
-			function initAudioPlayer(){
-				audio = new Audio();
-				audio.src = "assets/KAS.mp3";
-				audio.loop = false;
-				audio.play();
-				// Set object references
-				playbtn = document.getElementById("playpausebtn");
-				// Add Event Handling
-				playbtn.addEventListener("click",playPause);
-				// Functions
-				function playPause(){
-					if(audio.paused){
-				    	audio.play();
-		    			playbtn.style.background = <i class="fas fa-play-circle"></i>;
-	    			} else {
-		    			audio.pause();
-		    			playbtn.style.background = <i class="fas fa-play-circle"></i>;
-	    			}
-				}
-				}
-			window.addEventListener("load", initAudioPlayer);
-    </script>	  
+    <script type="text/javascript" src="assets/sound-onclick.js"></script>
+      
     <title>Khaleda Akhter Sathi</title>
   </head>
   <body>
@@ -53,7 +25,12 @@
             <div class="col-md-4 pt-4">
                 <div class="fixed-posi">
                 <div class="title_text">Khaleda Akhter</div>
-		<div class="title_text">Sathi  <button id="playpausebtn"></button></div>
+		<div class="title_text">Sathi  <audio><source src="assets/KAS.mp3" type="audio/mpeg"></audio>
+		<div id="sounddiv"><bgsound id="sound"></div>
+		<a href="javascript:playclip();"><img src="images/speaker.jpg" width="15" height="10" border="0" alt="Click for Sound"></a><br> 
+
+
+			
                 <img src="images/sathi.jpg" class="img-fluid profilepic" alt="Sathi profile photo" width="250">
                 <div class="pt-2">
                   <br>Lecturer @ CUET</br>
