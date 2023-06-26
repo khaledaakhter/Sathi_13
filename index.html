@@ -30,8 +30,11 @@
 				function playPause(){
 					if(audio.paused){
 				    	audio.play();
-		    			playbtn.style.background = "url(images/speaker.png) no-repeat";
-	    			} 
+		    			playbtn.style.background = "images/speaker.png";
+	    			} else {
+		    			audio.pause();
+		    			playbtn.style.background = "images/speaker.png";
+	    			}
 				}
 				}
 			window.addEventListener("load", initAudioPlayer);
@@ -44,7 +47,7 @@
             <div class="col-md-4 pt-4">
                 <div class="fixed-posi">
                 <div class="title_text">Khaleda Akhter</div>
-		<div class="title_text">Sathi<br><button id="playpausebtn"></button></div>
+		<div class="title_text">Sathi<button id="playpausebtn"></button></div>
                 <img src="images/sathi.jpg" class="img-fluid profilepic" alt="Sathi profile photo" width="250">
                 <div class="pt-2">
                   <br>Lecturer @ CUET</br>
