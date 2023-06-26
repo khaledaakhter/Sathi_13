@@ -18,7 +18,7 @@
     <style>
     button{<i class="fas fa-play-circle"></i>}
     button#playpausebtn{
-	background:<i class="fas fa-play-circle"></i>;
+	<i class="fas fa-play-circle"></i>;
     } 
     </style>	  
     <script>
@@ -36,10 +36,10 @@
 				function playPause(){
 					if(audio.paused){
 				    	audio.play();
-		    			playbtn.style.background = "fas fa-play-circle";
+		    			playbtn.style.background = <i class="fas fa-play-circle"></i>;
 	    			} else {
 		    			audio.pause();
-		    			playbtn.style.background = "fas fa-play-circle";
+		    			playbtn.style.background = <i class="fas fa-play-circle"></i>;
 	    			}
 				}
 				}
