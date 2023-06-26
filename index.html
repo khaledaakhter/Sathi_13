@@ -18,7 +18,7 @@
     <style>
     button{ border:none; cursor:pointer; outline:none; }
     button#playpausebtn{
-	<a id="icon_speaker" class="tag had" href="assets/KAS.mp3" target="_blank"><i class="fas fa-play-circle"></i></a>;
+	<i class="fas fa-play-circle"></i></a>;
 	width:25px;
 	height:25px;
     } 
@@ -28,7 +28,7 @@
 			function initAudioPlayer(){
 				audio = new Audio();
 				audio.src = "assets/KAS.mp3";
-				audio.loop = true;
+				audio.loop = false;
 				audio.play();
 				// Set object references
 				playbtn = document.getElementById("playpausebtn");
