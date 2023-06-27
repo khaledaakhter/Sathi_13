@@ -18,12 +18,10 @@
     <title>Khaleda Akhter Sathi</title>
   </head>
   <body>
-    window.addEventListener("load", () => {
-  	document.body.classList.add("bg-color");
-    });
     <div class="container pb-5 allstuffp">
         <div class="row pt-5 allstuff">
             <div class="col-md-4 pt-4">
+		<div class="bg-color">     
                 <div class="fixed-posi">
 		<audio><source src="assets/KAS.mp3" type="audio/mpeg"></audio>
 		<div id="sounddiv"><bgsound id="sound"></div><div>
@@ -150,7 +148,8 @@
     }
 
     .bg-color {
-        background-color:ash;
+        background-color:rgba(0,0,0,.5);
+	color: #fff;
 	width:100px;
   	height:100px;
 	align-items:left;
