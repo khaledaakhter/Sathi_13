@@ -18,6 +18,9 @@
     <title>Khaleda Akhter Sathi</title>
   </head>
   <body>
+    window.addEventListener("load", () => {
+  	document.body.classList.add("bg-color");
+    });
     <div class="container pb-5 allstuffp">
         <div class="row pt-5 allstuff">
             <div class="col-md-4 pt-4">
@@ -145,15 +148,22 @@
         color: #111;
         font-size: 17px;
     }
+
+    .bg-color {
+        background-color:ash;
+	width:100px;
+  	height:100px;
+	align-items:left;
+    } 
     .name {
         font-size: 24pt;
         color: #111;
     }
     .title_text {
-    font-family: 'League Gothic', sans-serif;
-    font-weight: 700;
-    font-size: 28pt;
-    color: #000000;
+    	font-family: 'League Gothic', sans-serif;
+    	font-weight: 700;
+    	font-size: 28pt;
+    	color: #000000;
     }
     a {
         /* color: #555; */
